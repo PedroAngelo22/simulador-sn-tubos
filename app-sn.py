@@ -20,7 +20,7 @@ peso_especifico_solo = st.sidebar.number_input(
     "Peso específico do solo (kN/m³)", min_value=10, max_value=24, value=18)
 
 carga_trafego = st.sidebar.slider(
-    "Carga de tráfego (kPa)", min_value=0, max_value=150, value=50)
+    "Carga de tráfego (kPa)", min_value=0, max_value=700, value=50)
 
 modulo_reacao = st.sidebar.selectbox(
     "Módulo de reação do solo (E') [MPa]", options=[2, 4, 10, 15])
