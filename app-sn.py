@@ -36,7 +36,7 @@ sn_minimo = (carga_total * (diametro_mm / 1000)) / (modulo_reacao * (deformacao_
 st.markdown(f"### ✅ SN Mínimo Recomendado: **{sn_minimo:.0f} kN/m²**")
 
 # Cálculo de deformações para diferentes SN aplicados
-sn_aplicados = np.arange(2000, 16000, 1000)
+sn_aplicados = np.arange(2000, 30000, 1000)
 deformacoes = [(sn, (carga_total * (diametro_mm / 1000)) / (modulo_reacao * sn) * 100) for sn in sn_aplicados]
 
 sns_plot = [d[0] for d in deformacoes]
